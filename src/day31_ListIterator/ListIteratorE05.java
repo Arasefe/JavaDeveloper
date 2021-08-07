@@ -1,9 +1,6 @@
-package day32_ListIterator;
+package day31_ListIterator;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
-import java.util.ListIterator;
 import java.util.function.Predicate;
 
 /*
@@ -19,7 +16,7 @@ ListIterator can traverse List objects only.
 Iterator has no method to obtain an index of the element in a collection.
 Using ListIterator, you can obtain an index of the element in a collection.
  */
-public class ListIteratorE01 {
+public class ListIteratorE05 {
     public static void main(String[] args) {
         LinkedList<String> list=new LinkedList<>();
         list.add("Sam");
@@ -67,7 +64,11 @@ public class ListIteratorE01 {
         Predicate<String> lessThan5= p->p.length()<5;
         list.removeIf(lessThan5);
 
+        list.add("Aras");
+
         System.out.println(list);
+
+        System.out.println(list.subList(2,5));
 
     }
 
