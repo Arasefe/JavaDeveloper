@@ -2,7 +2,7 @@ package day32_Collections;
 
 import java.util.LinkedHashSet;
 
-public class LinkedHashSetLHS01 {
+public class LinkedHashSet01 {
     public static void main(String[] args) {
         /*
         LinkedHashSet puts the elements in insertion order
