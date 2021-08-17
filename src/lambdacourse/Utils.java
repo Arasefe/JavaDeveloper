@@ -37,6 +37,21 @@ public class Utils {
         return str.charAt(0);
     }
 
+    public static Integer getSumOfDigitsA(int x){
+        int sum=0;
+        if(x!=0){
+            sum+=x%10;
+            x/=10;
+        }
+        return sum;
+    }
 
-
+    public static Integer getSumOfDigitsB(int x){
+        int sum=0;
+        String str=String.valueOf(x);
+        for (int i = 0; i < str.length(); i++) {
+            sum+=Integer.parseInt(""+str.charAt(i));
+        }
+        return sum;
+    }
 }
