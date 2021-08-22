@@ -1,4 +1,4 @@
-package lambdaLinkedin.coursePeggy;
+package lambdaLinkedin.courseShaun;
 
 import lambdaLinkedin.courseShaun.NoArgFunction;
 
